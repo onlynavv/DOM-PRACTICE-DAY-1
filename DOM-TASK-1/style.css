@@ -1,0 +1,11 @@
+table,
+td,
+th {
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+
+form {
+  max-width: 1200px;
+  margin: 25px auto;
+}
