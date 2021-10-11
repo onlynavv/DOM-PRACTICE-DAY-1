@@ -8,6 +8,8 @@ infoPara.style.marginTop = '35px'
 document.body.append(infoPara)
 
 const formElement = document.createElement('form')
+formElement.style.paddingLeft = '20px'
+formElement.style.paddingRight = '20px'
 
 document.body.appendChild(formElement)
 
@@ -312,7 +314,7 @@ formElement.append(formDiv1,formDiv2,formDiv3,formDiv4,formDiv5,formDiv6,formDiv
 
 // ---------------------------------form ends-----------------------------------------
 
-const mainHead = document.createElement('h1')
+const mainHead = document.createElement('h4')
 mainHead.innerText = 'USER INFO DISPLAY'
 mainHead.style.marginTop = '25px'
 mainHead.style.marginBottom = "25px"
@@ -321,11 +323,16 @@ document.body.append(mainHead)
 
 // ---------------------------------table starts-----------------------------------------
 
+const tableDiv = document.createElement('div')
+document.body.append(tableDiv)
+
 const domTable = document.createElement('table')
 document.body.append(domTable)
 
 domTable.setAttribute('class','table')
 
+tableDiv.append(domTable)
+tableDiv.setAttribute('class','table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl')
 
 // heading row
 
