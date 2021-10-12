@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.userLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCard {
+  padding: 20px;
+  background: white;
+  width: 250px;
+  border: solid 1px #ebebeb;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 4px 7px 3px #ebebeb;
+  margin-bottom: 30px;
+}
+
+.pageDiv {
+  display: inline-block;
+}
+
+.pageDiv > button {
+  color: #3679b7;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #e0e6eb;
+  background-color: white;
+}
+
+.pageDiv button.active {
+  background-color: #3679b7;
+  color: white;
+  border: 1px solid #3679b7;
+}
+
+.pageDiv button.disabled {
+  background-color: #c5c5c5;
+  color: black;
+  border: 1px solid #c5c5c5;
+}
+
+.pageDiv button:hover {
+  background-color: #3679b7;
+  border: 1px solid #3679b7;
+  cursor: pointer;
+  color: white;
+}
+
+.activePage {
+  background-color: #3679b7 !important;
+  border: 1px solid #3679b7 !important;
+  cursor: pointer;
+  color: white !important;
+}
+
+.mainPageDiv {
+  text-align: center;
+  width: 350px;
+  margin: 5px auto;
+}
+
+@media screen and (min-width: 650px) {
+  .userCard {
+    width: 460px;
+  }
+
+  .mainPageDiv {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
